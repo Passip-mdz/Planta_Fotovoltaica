@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planta Fotovoltaica PASIP</title>
+  <style>
+    body {
+ font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  color: #111111;
+  background: url('Parque-Solar-Pasip.jpg') no-repeat center center fixed;
+  background-size: cover;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a.active {
+      border-bottom: 2px solid #00c48c;
+    }
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: rgba(0, 0, 0, 0.116);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgb(0, 51, 255);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #f0f0f0;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+    /* Ocultar todas las secciones menos la activa */
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    form button {
+      background-color: #007b5e;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    form button:hover {
+      background-color: #005e45;
+    }
+    .suggestions-list {
+      list-style: none;
+      padding: 0;
+    }
+    .suggestions-list li {
+      background: #e6f7f1;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .suggestions-list li strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #007b5e;
+    }
+    .carousel-container {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.suggestions-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.suggestions-carousel li {
+  flex: 0 0 100%;
+  background: #00000069;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  min-width: 100%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007b5e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.carousel-btn.left {
+  left: 0;
+}
+.carousel-btn.right {
+  right: 0;
+}
+.carousel-btn:hover {
+  background-color: #005e45;
+}
+.sugerencia-bloque {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+.sugerencia-bloque::-webkit-scrollbar {
+  width: 6px;
+}
+.sugerencia-bloque::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Planta Fotovoltaica PASIP</h1>
+  <nav>
+    <a href="#" class="tab-link active" data-tab="info">Información</a>
+    <a href="#" class="tab-link" data-tab="form">Enviar Sugerencia</a>
+    <a href="#" class="tab-link" data-tab="suggestions">Ver Sugerencias</a>
+  </nav>
+</header>
+
+<section id="info" class="tab-content active">
+  <h2>Información General</h2>
+  <p>La Planta Fotovoltaica PASIP es una instalación moderna dedicada a la generación de energía eléctrica mediante el aprovechamiento de la radiación solar. Ubicada estratégicamente en una zona con alta radiación solar, PASIP contribuye significativamente a la reducción de la huella de carbono regional.</p>
+
+  <h3>Ubicación</h3>
+  <p>Parque Solar PASIP, Mendoza, Argentina</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.0508461516615!2d-68.5422675!3d-33.0386532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e6badce855ca3%3A0xdbb4c380dd9f1cfb!2sParque%20solar%20fotovoltaico%20PASIP!5e0!3m2!1ses-419!2sar!4v1718129800000!5m2!1ses-419!2sar"
+    width="100%" height="300" style="border:none; border-radius: 8px;" allowfullscreen loading="lazy"></iframe>
+
+  <h3>Contacto</h3>
+  <p><strong>Email:</strong> luceromolinanicolasmato@gmail.com, gastongag89@gmail.com</p>
+  <p><strong>Teléfono:</strong> +54 261 345 8064, 261 526 6125</p>
+</section>
+
+<section id="form" class="tab-content">
+  <h2>Envíanos tu sugerencia</h2>
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSfN45G50dzZ2WViE6opoAfUf_eWcNywKzvu8rEe1-tlY9omPg/viewform?embedded=true"
+    width="100%" height="900" style="border:none; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.1);"></iframe>
+</section>
+
+<section id="suggestions" class="tab-content">
+  <h2>Sugerencias Recibidas</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="moveSlide(-1)">←</button>
+    <ul class="suggestions-carousel" id="suggestionsCarousel">
+    <!-- Aquí puedes poner las sugerencias manualmente: -->
+   <li>
+  <strong>Agustin Cerroni</strong>
+  <div class="sugerencia-bloque">
+  <p><em>Propuesta para Potenciar la Refrigeración de su Parque Solar en Godoy Cruz, Mendoza</em></p>
+  <p><strong>Cuidando sus Activos, Asegurando su Futuro Energético</strong></p>
+  <p>
+    Sabemos que el sol de Godoy Cruz, si bien es fuente de energía, también presenta un desafío para la eficiencia y la vida útil de sus equipos más valiosos: los transformadores e inversores. Nuestra intención es ofrecerle un camino para optimizar la gestión térmica de su parque solar, protegiendo su inversión y asegurando que cada rayo de sol se convierta en la máxima producción de energía.
+  </p>
+  
+  <h4>Transformadores (630 kVA): La Seguridad y Tranquilidad de los Ésteres Naturales</h4>
+  <p>
+    Sus transformadores de 630 kVA son el corazón de su parque solar. Proponemos una migración a refrigeración líquida mejorada con <strong>Ésteres Naturales</strong> combinados con un diseño avanzado (Aceite Dirigido, Aire Forzado) y control inteligente.
+  </p>
+  <ul>
+    <li><strong>Mayor Tranquilidad:</strong> Punto de inflamación mucho más alto que el aceite mineral → menor riesgo de incendio.</li>
+    <li><strong>Vida Útil Más Larga:</strong> Mejora del aislamiento y aumento de vida operativa entre un 10-20% o más.</li>
+    <li><strong>Eficiencia Silenciosa:</strong> Menor pérdida de energía por calor → mayor entrega de electricidad a la red.</li>
+    <li><strong>Rendimiento en Cualquier Clima:</strong> Mejor funcionamiento durante los días calurosos de Mendoza.</li>
+    <li><strong>Respeto por el Entorno:</strong> Biodegradables y no tóxicos → sostenibilidad ambiental.</li>
+  </ul>
+
+  <h4>Inversores (Sungrow SG630HX): Un Aire Más Fresco para una Operación Continua</h4>
+  <p>
+    Los inversores pueden beneficiarse de un entorno térmico más optimizado. Proponemos mejoras en la refrigeración por aire:
+  </p>
+  <ul>
+    <li><strong>Espacio para Respirar:</strong> Mejor circulación de aire alrededor de los inversores.</li>
+    <li><strong>Un Poco de Sombra:</strong> Techos o parasoles para reducir exposición directa al sol.</li>
+    <li><strong>Limpieza Constante:</strong> Plan de limpieza para entradas y salidas de aire.</li>
+    <li><strong>Monitoreo Inteligente:</strong> Uso de sensores para control dinámico de los ventiladores.</li>
+  </ul>
+
+  <h4>¿Qué beneficios obtendrán sus inversores?</h4>
+  <ul>
+    <li><strong>Mayor Durabilidad:</strong> Menos estrés térmico = mayor vida útil.</li>
+    <li><strong>Rendimiento sin Interrupciones:</strong> Evita la reducción de potencia por sobrecalentamiento.</li>
+    <li><strong>Operación Confiable:</strong> Reducción de averías inesperadas y mejor estabilidad.</li>
+  </ul>
+</li>
+
+<li>
+  <strong>Sofía Rojas</strong>
+  <div class="sugerencia-bloque">
+    <p><em>Propuesta para Considerar Tecnologías Fotovoltaicas Avanzadas ante una Posible Expansión de Planta</em></p>
+    
+    <p>Ante la posibilidad de una futura expansión de la planta, y tras realizar un análisis técnico comparativo, me gustaría proponer la consideración de tecnologías más eficientes en generación fotovoltaica.</p>
+    
+    <p>Específicamente, recomendaría evaluar el uso de <strong>paneles solares monocristalinos</strong> o incluso <strong>bifaciales</strong>, en lugar de los tradicionales policristalinos.</p>
+    
+    <h4>Ventajas de los paneles bifaciales</h4>
+    <ul>
+      <li>Pueden generar entre un 10% y un 30% más de energía que los paneles convencionales.</li>
+      <li>Aprovechan la luz solar por ambas caras, útil especialmente en zonas con alta reflectancia.</li>
+      <li>Mendoza cuenta con condiciones climáticas ideales para este tipo de tecnología.</li>
+      <li>Muchos modelos ofrecen garantías de hasta 30 años.</li>
+      <li>Su mayor rendimiento y durabilidad justifican la inversión a mediano y largo plazo.</li>
+    </ul>
+    
+    <h4>Alternativa: paneles solares monocristalinos</h4>
+    <ul>
+      <li>Eficiencia promedio entre el 18% y el 22%, llegando hasta el 23% en modelos de gama alta.</li>
+      <li>Garantías entre 25 y 30 años.</li>
+      <li>Precio un 10% a 20% superior al policristalino, pero con mejor rendimiento y uso de espacio.</li>
+    </ul>
+    
+    <p><strong>Resumen:</strong> Considero que adoptar tecnologías más eficientes como los paneles monocristalinos o bifaciales podría aportar un valor significativo a largo plazo, tanto desde el punto de vista técnico como económico.</p>
+
+    <p><strong>Contacto:</strong> roj.sof08@gmail.com</p>
+  </div>
+</li>
+
+    <li><strong>María Gómez</strong> — ¿Podrían implementar un sistema de monitoreo en tiempo real para la comunidad?</li>
+    <li><strong>Carlos Díaz</strong> — Excelente proyecto, ojalá se replique en otras regiones.</li>
+
+  </ul>
+    <button class="carousel-btn right" onclick="moveSlide(1)">→</button>
+  </div>
+</section>
+
+<script>
+  const carousel = document.getElementById('suggestionsCarousel');
+
+  function moveSlide(direction) {
+    const slideWidth = carousel.clientWidth;
+    carousel.scrollBy({
+      left: direction * slideWidth,
+      behavior: 'smooth'
+    });
+  }
+
+  // Mantiene funcionalidad de pestañas
+  const links = document.querySelectorAll('.tab-link');
+  const tabs = document.querySelectorAll('.tab-content');
+
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+      const tabToShow = link.getAttribute('data-tab');
+      tabs.forEach(tab => {
+        if (tab.id === tabToShow) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>
